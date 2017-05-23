@@ -1,0 +1,71 @@
+{
+  "name": "R4-Core",
+  "description": "Front-end Toolkit",
+  "author": "Alexandre Laplante <vaderlaplante@gmail.com>",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "font-awesome": "4.7.x",
+    "gulp": "3.9.x",
+    "gulp-sass": "3.1.x",
+    "gulp-less": "3.3.x",
+    "git-rev": "0.2.x",
+    "gulp-concat-css": "2.3.x",
+    "gulp-clean-css": "3.3.x",
+    "gulp-rename": "1.2.x",
+    "yargs": "8.0.x"
+  },
+  "paths": {
+    "host": {
+      "dev": "//localhost/R4-Core/",
+      "prod": "//www.r4-p17.com/"
+    },
+    "modules": {
+      "styles": [
+        "node_modules/bootstrap/dist/css/bootstrap.css",
+        "node_modules/font-awesome/css/font-awesome.css"
+      ],
+      "scripts": [
+        "node_modules/jquery/dist/jquery.js"
+      ],
+      "fonts": [
+        "node_modules/font-awesome/fonts/*.*"
+      ]
+    },
+    "src": {
+      "styles": {
+        "less": [
+          "./src/less/main-less.less"
+        ],
+        "sass": [
+          "main.scss",
+          "menu.scss"
+        ]
+
+      },
+      "scripts": [
+        "./src/js/main.js"
+      ],
+      "images": [
+        "./src/images/**/*.jpg",
+        "./src/images/**/*.png",
+        "./src/images/**/*.gif",
+        "./src/images/**/*.svg"
+      ],
+      "fonts": [
+        "./src/fonts/**/*.*"
+      ]
+    },
+    "dist": {
+      "styles": "./dist/css",
+      "scripts": "./dist/js",
+      "images": "./dist/images",
+      "fonts": "./dist/fonts"
+    },
+    "dev": {
+      "styles": "./dev/css",
+      "scripts": "./dev/js",
+      "images": "./dev/images",
+      "fonts": "./dev/fonts"
+    }
+  }
+}
